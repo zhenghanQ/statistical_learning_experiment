@@ -17,7 +17,7 @@ body {
   padding: 20px;
   position: absolute;
   margin: auto;
-  width: 700px;
+  width: 800px;
   bottom: 40px;
   left: 32px;
   right: 32px;
@@ -29,6 +29,7 @@ body {
     right: 32px;
     margin: auto;
     position: absolute;
+    width: 500px;
 }
 
 h1 {
