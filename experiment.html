@@ -22,9 +22,9 @@
         questions: ['Please enter your participant ID']
     };
     
-    timeline.push(par_id);
-    
-    var welcome_block = {
+    if (par_id.Q0 === 'bild') {
+        timeline.push(par_id);
+        var welcome_block = {
         type: "text",
         text: "Welcome to the experiment. Press any key to begin."
     };
@@ -72,6 +72,26 @@
 
         }
     });
+    }
+    else {
+        var wrong_id = {
+            type: 'text',
+            text: 'You cannot continue with the experiment'
+        }
+        timeline.push(wrong_id);
+        jsPsych.init({
+        timeline: timeline,
+        fullscreen: true,
+        on_finish: function() {
+            jsPsych.data.displayData('csv');
+
+        }
+    });
+    }
+    
+    
+    
+    
     
 </script> 
 </body>
