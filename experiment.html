@@ -28,7 +28,7 @@
         text: "<p>In this experiment you will see images appear one at a time</p>" +
               "<p>your job is simply to watch the images as they appear and press any key</p>" +
               "<p>when you see a yellow circle appear on the screen.</p>",
-        timing_post_trial: 2000
+        timing_post_trial: 100
     };
     
     timeline.push(instructions_block);
@@ -37,21 +37,21 @@
         type: 'single-stim',
         stimulus: 'images/circle.png',
         choices: ['J'],
-        timing_post_trial: 200
+        timing_post_trial: 100
     };
     
     var triangle_trial = {
         type: 'single-stim',
         stimulus: 'images/triangle.png',
         choices: ['J'],
-        timing_post_trial: 200
+        timing_post_trial: 100
     };
     
     var trapezoid_trial = {
         type: 'single-stim',
         stimulus: 'images/trapezoid.png',
         choices: ['J'],
-        timing_post_trial: 200
+        timing_post_trial: 100
     };
     
     timeline.push(circle_trial, triangle_trial, trapezoid_trial);
