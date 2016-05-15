@@ -22,7 +22,7 @@
         questions: ['Please enter your participant ID']
     };
     
-    if (par_id.Q0 === 'bild') {
+    if (par_id['Q0'] === 'bild') {
         timeline.push(par_id);
         var welcome_block = {
         type: "text",
@@ -76,7 +76,7 @@
     else {
         var wrong_id = {
             type: 'text',
-            text: 'You cannot continue with the experiment'
+            text: 'You cannot continue with the experiment, press any key to end.'
         }
         timeline.push(wrong_id);
         jsPsych.init({
