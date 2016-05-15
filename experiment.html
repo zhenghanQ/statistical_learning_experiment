@@ -12,14 +12,28 @@
 <body>
     
     <script>
-
-    var hello_trial = {
-        type: 'text',
-        text: 'Hello World'
-    }
-
+   
+    var timeline = [];
+    
+    var welcome_block = {
+        type: "text",
+        text: "Welcome to the experiment. Press any key to begin."
+    };
+    
+    timeline.push(welcome_block);
+    
+    var instructions_block = {
+        type: "text"
+        text: "<p>In this experiment you will see images appear one at a time</p>" +
+              "<p>your job is simply to watch the images as they appear and press any key</p>" +
+              "<p>when you see a yellow circle appear on the screen.</p>" 
+    };
+    
+    timeline.push(instructions_block);
+    
+    
     jsPsych.init({
-        timeline: [ hello_trial ]
+        timeline: timeline
     })
 
 </script> 
