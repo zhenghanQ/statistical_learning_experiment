@@ -58,6 +58,8 @@
     
     jsPsych.init({
         timeline: timeline,
+        fullscreen: true,
+        show_progress_bar: true,
         on_finish: function() {
             jsPsych.data.displayData();
         }
