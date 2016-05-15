@@ -24,6 +24,11 @@ body {
   top: 65px;
 }
 
+#nav01 {
+    left: 32px;
+    right: 32px;
+    margin: auto;
+}
 
 h1 {
     font-family: Georgia, serif;
