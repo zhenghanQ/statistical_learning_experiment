@@ -10,6 +10,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 0 0 5px 5px;
+    padding: 20px;
     position: absolute;
     margin: auto;
     width: 800px;
