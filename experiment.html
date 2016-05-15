@@ -37,14 +37,16 @@
         type: 'single-stim',
         stimulus: 'images/circle.png',
         choices: ['J'],
-        timing_response: 800
+        timing_response: 800,
+        timing_post_trial: 200
     };
     
     var triangle_trial = {
         type: 'single-stim',
         stimulus: 'images/triangle.png',
         choices: ['J'],
-        timing_response: 800
+        timing_response: 800,
+        timing_post_trial: 200
     };
     
     var trapezoid_trial = {
@@ -52,7 +54,7 @@
         stimulus: 'images/trapezoid.png',
         choices: ['J'],
         timing_response: 800,
-        timing_post_trial: 800
+        timing_post_trial: 200
     };
     
     timeline.push(circle_trial, triangle_trial, trapezoid_trial);
