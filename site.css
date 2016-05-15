@@ -7,12 +7,12 @@ body {
 }
 
 #nav01 {
-    width: 800px;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 0 0 5px 5px;
     position: absolute;
     margin: auto;
+    width: 800px;
     left: 32px;
     right: 32px;
 }
