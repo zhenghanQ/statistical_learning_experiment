@@ -54,7 +54,10 @@
     timeline.push(circle_trial, triangle_trial, trapezoid_trial);
     
     jsPsych.init({
-        timeline: timeline
+        timeline: timeline,
+        on_finish: function() {
+            jsPsych.data.displayData();
+        }
     });
 
 </script> 
