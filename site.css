@@ -7,15 +7,20 @@ body {
 }
 
 
+}
 #main {
-  padding: 20px;
-  position: absolute;
-  margin: auto;
-  width: 800px;
-  bottom: 40px;
-  left: 32px;
-  right: 32px;
-  top: 65px;
+    padding: 20px;
+    position: absolute;
+    margin: auto;
+    width: 800px;
+    bottom: 40px;
+    left: 32px;
+    right: 32px;
+    top: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
 }
 
 
