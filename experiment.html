@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="jspsych-5.0.3/jspsych.js"></script>
     <script src="jspsych-5.0.3/plugins/jspsych-text.js"></script>
+    <script src="jspsych-5.0.3/plugins/jspsych-single-stim.js"></script>
     <link href="jspsych-5.0.3/css/jspsych.css" rel="stylesheet" type="text/css"></link>
 </head>
 
@@ -26,11 +27,19 @@
         type: "text",
         text: "<p>In this experiment you will see images appear one at a time</p>" +
               "<p>your job is simply to watch the images as they appear and press any key</p>" +
-              "<p>when you see a yellow circle appear on the screen.</p>" 
+              "<p>when you see a yellow circle appear on the screen.</p>"
+        timing_post_trial: 2000
     };
     
     timeline.push(instructions_block);
     
+    var circle_trial = {
+        type: 'single-stim',
+        stimulus: 'images/circle.png',
+        choices: ['J']
+    }
+    
+    timeline.push(circle_trial);
     
     jsPsych.init({
         timeline: timeline
