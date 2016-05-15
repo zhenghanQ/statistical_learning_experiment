@@ -6,13 +6,7 @@ body {
     padding: 3px;
 }
 
-#main {
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
-}
+
 #main {
   padding: 20px;
   position: absolute;
