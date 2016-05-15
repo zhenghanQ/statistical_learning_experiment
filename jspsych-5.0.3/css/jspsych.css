@@ -326,3 +326,10 @@ label.jspsych-survey-multi-choice-text input[type="radio"] {
   margin-left: auto;
   margin-right: auto;
 }
+
+#expmain {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
