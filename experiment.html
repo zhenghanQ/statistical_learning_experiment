@@ -15,7 +15,6 @@
 
     <script>
     
-    var pre_timeline = [];
     var timeline = [];
     
     var par_id = {
@@ -52,12 +51,12 @@
         timing_post_trial: 200
     };
     
-    pre_timeline.push(par_id);
+    timeline.push(par_id);
     timeline.push(instructions_block);
     timeline.push(circle_trial, triangle_trial, trapezoid_trial);
     
     jsPsych.init({
-        timeline: [pre_timeline, timeline],
+        timeline: timeline,
         fullscreen: true,
         on_finish: function() {
             jsPsych.data.displayData('csv');
