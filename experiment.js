@@ -1,6 +1,6 @@
 <script>
 (function() { var rotate = document.getElementById('rotate'); var iDir =
-'../images/square.png'; var idx = 0; var imag = ['square.png','circle.png','triangle.png',
+'images/square.png'; var idx = 0; var imag = ['square.png','circle.png','triangle.png',
 'trapezoid.png'];
 var imagPres = 0; var
 lengthInMilliseconds = 1000; var len = imag.length; var chImg = function
