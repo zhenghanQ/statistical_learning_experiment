@@ -24,13 +24,6 @@ body {
   top: 65px;
 }
 
-#nav01 {
-    left: 32px;
-    right: 32px;
-    margin: auto;
-    position: absolute;
-    width: 500px;
-}
 
 h1 {
     font-family: Georgia, serif;
