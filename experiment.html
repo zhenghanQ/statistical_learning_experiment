@@ -118,6 +118,8 @@
     timeline.push(instructions_block);
     timeline.push(struct_block);
     
+    jsPsych.preloadImages(struct_block_stim, function(){ startExperiment(); });
+    
     jsPsych.init({
         timeline: timeline,
         fullscreen: true,
