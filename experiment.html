@@ -37,7 +37,7 @@
       type: 'single-stim',
       choices: ['F'],
       timeline: struct_block_stim,
-      timing_post_stim: 100,
+      timing_post_trial: 200
       timing_response: 400,
       response_ends_trial: false
     };
@@ -49,7 +49,9 @@
 
 
     jsPsych.init({
-        timeline: timeline
+        timeline: timeline,
+        on_finish: function() {
+            jsPsych.data.displayData('csv');
     });
 
 
