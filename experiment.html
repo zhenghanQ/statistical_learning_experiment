@@ -146,7 +146,7 @@
   jsPsych.init({
     timeline: timeline,
     on_finish: function() {
-      jsPsych.data.displayData('csv');
+      jsPsych.data.localSave('timing_test.csv', 'csv');
     }
   });
 
