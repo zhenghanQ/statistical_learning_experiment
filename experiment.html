@@ -118,9 +118,7 @@
     timeline.push(instructions_block);
     timeline.push(struct_block);
     
-    jsPsych.preloadImages(struct_block_stim, function(){ startExperiment(); });
     
-
     function startExperiment(){
     jsPsych.init({
         timeline: timeline,
@@ -130,6 +128,8 @@
             }
         });
     }
+    
+    jsPsych.preloadImages(struct_block_stim, function(){ startExperiment(); });
 </script> 
 
 </body>
