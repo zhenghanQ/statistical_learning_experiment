@@ -30,30 +30,24 @@
         timing_post_trial: 2000
     };
     
-    var circle_trial = {
-        type: 'single-stim',
-        stimulus: 'images/circle.png',
-        timing_response: 796,
-        timing_post_trial: 200
-    };
+    var struct_block_stim = [
+        {stimulus: 'images/trapezoid.png'},
+        {stimulus: 'images/triangle.png'},
+        {stimulus: 'images/circle.png'},
+        ];
     
-    var triangle_trial = {
-        type: 'single-stim',
-        stimulus: 'images/triangle.png',
-        timing_response: 796,
-        timing_post_trial: 200
-    };
-    
-    var trapezoid_trial = {
-        type: 'single-stim',
-        stimulus: 'images/trapezoid.png',
-        timing_response: 796,
-        timing_post_trial: 200
+    var struct_block = {
+      type: 'single-stim',
+      choices: ['F'],
+      timeline: struct_block_stim,
+      timing_stim: 795,
+      timing_post_stim: 200,
+      response_ends_trial: false
     };
     
     timeline.push(par_id);
     timeline.push(instructions_block);
-    timeline.push(circle_trial, triangle_trial, trapezoid_trial);
+    timeline.push(struct_block);
     
     jsPsych.init({
         timeline: timeline,
