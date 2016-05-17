@@ -120,14 +120,16 @@
     
     jsPsych.preloadImages(struct_block_stim, function(){ startExperiment(); });
     
+
+    function startExperiment(){
     jsPsych.init({
         timeline: timeline,
         fullscreen: true,
         on_finish: function() {
             jsPsych.data.displayData('csv');
-
         }
     });
+}
 
 </script> 
 
