@@ -30,12 +30,13 @@
         timing_post_trial: 2000
     };
     
-    var struct_block_stim = ['images/trapezoid.png', 'images/triangle.png', 'images/circle.png'];
+    var struct_block_stim = [{stimulus: 'images/trapezoid.png'}, {stimulus: 'images/triangle.png'}, 
+    {stimulus: 'images/circle.png'}];
     
     var struct_block = {
       type: 'single-stim',
       choices: ['F'],
-      stimulus: struct_block_stim,
+      timeline: struct_block_stim,
       timing_post_stim: 100,
       timing_response: 400,
       response_ends_trial: false
