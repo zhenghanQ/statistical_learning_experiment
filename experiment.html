@@ -46,15 +46,13 @@
     timeline.push(struct_block);
     
     
+jsPsych.preloadImages(sturct_block_stim, function(){ startExperiment(); });
 
+function startExperiment(){
     jsPsych.init({
-        timeline: timeline,
-        fullscreen: true,
-        on_finish: function() {
-            jsPsych.data.displayData('csv');
-            }
-        });
-    
+        timeline: timeline
+    });
+}
 
 </script> 
 
