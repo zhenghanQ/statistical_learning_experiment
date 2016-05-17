@@ -119,7 +119,7 @@
     timeline.push(struct_block);
     
     
-    function startExperiment(){
+
     jsPsych.init({
         timeline: timeline,
         fullscreen: true,
@@ -127,9 +127,8 @@
             jsPsych.data.displayData('csv');
             }
         });
-    }
     
-    jsPsych.preloadImages(struct_block_stim, function(){ startExperiment(); });
+
 </script> 
 
 </body>
