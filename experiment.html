@@ -49,13 +49,11 @@
     pics['2'] = 'images/triangle.png';
     pics['3'] = 'images/trapezoid.png';
     
-
     var img_block_1 = [];
     for (i=0; i<seq1.length; i++) {
         img_block_1.push({'stimulus': pics[seq1[i]]});  
     }
 
-    
     var struct_block = {
       type: 'single-stim',
       choices: ['F'],
@@ -65,12 +63,10 @@
       response_ends_trial: false
     };
     
-    
     timeline.push(par_id);
     timeline.push(instructions_block);
     timeline.push(struct_block);
     
-
   jsPsych.init({
     timeline: timeline,
     on_finish: function() {
