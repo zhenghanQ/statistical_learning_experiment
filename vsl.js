@@ -14,7 +14,7 @@ String.prototype.format = function () {
 
 function target() {
     var alien = jsPsych.data.getLastTrialData();
-    var exp_tar = 'images/Alien{}.png'.format(alien.responses['Q1']);
+    var exp_tar = 'images/Alien{}.png'.format(alien.responses['Q0']);
     return exp_tar
 };
 
