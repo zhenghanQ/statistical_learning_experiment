@@ -2,7 +2,7 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Please enter your participant ID']
+    questions: ['Please enter your participant ID','target']
 };
     
 var welcome = {
@@ -13,7 +13,8 @@ var welcome = {
     cont_key: ['F']
     timing_post_trial: 400
 };
- 
+
+// function for string formating, helps with target selection 
 String.prototype.format = function() {
     var i = 0; args = arguments;
     return this.replace(/{}/g, function () {
@@ -23,7 +24,7 @@ String.prototype.format = function() {
   
 var target = {
     type: 'single-stim',
-    stimulus: 'Alien'
+    stimulus: 'Alien{}.png'.format(par_id.responses['Q1']);
     choices['F'],
     timing_post_trial: 400
 }    
