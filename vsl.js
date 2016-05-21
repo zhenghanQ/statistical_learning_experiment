@@ -2,10 +2,9 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Please enter your participant ID','target']
+    questions: ['Please enter your participant ID','question']
 };
  
-// function for string formating, helps with target selection 
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -13,26 +12,27 @@ String.prototype.format = function () {
     });
 };
 
-
 function target() {
     jsPsych.data.getLastTrialData();
     var exp_tar = 'images/Alien{}.png'.format(data.respones['Q1']);
     return exp_tar
 };
 
+
+
 var target_alien = {
     type: 'single-stim',
-    stimulus: target(),
-    choices['F'],
+    stimulus: 'images/Alien1.png',
+    choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
 };
 
 var welcome = {
     type: "text",
-    text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
+    text: "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
           "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-          "We'll show you the aline now.</p>",
+          "We will show you the aline now.</p>",
     cont_key: ['F'],
     timing_post_trial: 400
 };
@@ -72,7 +72,7 @@ var struct_block = {
 };
     
 timeline.push(par_id);
-timeline.push(target);
+timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
     
