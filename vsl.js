@@ -4,16 +4,7 @@ var par_id = {
     type: 'survey-text',
     questions: ['Please enter your participant ID','target']
 };
-    
-var welcome = {
-    type: "text",
-    text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
-          "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-          "We'll show you the aline now.</p>",
-    cont_key: ['F'],
-    timing_post_trial: 400
-};
-
+ 
 // function for string formating, helps with target selection 
 String.prototype.format = function () {
     var i = 0, args = arguments;
@@ -23,15 +14,29 @@ String.prototype.format = function () {
 };
 
 
-var tar = 'Alien{}'.format(exp_tar_cond);
-  
-var target = {
+function target() {
+    jsPsych.data.getLastTrialData();
+    var exp_tar = 'Alien{}.png'.format(data.respones['Q1']);
+    return exp_tar
+};
+
+var target_alien = {
     type: 'single-stim',
-    stimulus: tar,
+    stimulus: target(),
     choices['F'],
     response_ends_trial: true,
     timing_post_trial: 400
 };
+
+var welcome = {
+    type: "text",
+    text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
+          "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
+          "We'll show you the aline now.</p>",
+    cont_key: ['F'],
+    timing_post_trial: 400
+};
+
 
 var seq1 = [
     3,2,1,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,
