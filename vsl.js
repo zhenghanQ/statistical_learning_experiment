@@ -24,10 +24,11 @@ String.prototype.format = function() {
   
 var target = {
     type: 'single-stim',
-    stimulus: 'Alien{}.png'.format(par_id.responses['Q1']);
+    stimulus: 'Alien{}.png'.format(par_id.responses['Q1']);,
     choices['F'],
     timing_post_trial: 400
-}    
+};
+
 var seq1 = [
     3,2,1,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,
     1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,
@@ -62,6 +63,7 @@ var struct_block = {
 };
     
 timeline.push(par_id);
+timeline.push(target);
 timeline.push(instructions_block);
 timeline.push(struct_block);
     
