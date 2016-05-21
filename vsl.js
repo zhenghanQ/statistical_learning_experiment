@@ -72,7 +72,7 @@ var struct_block = {
 };
     
 timeline.push(par_id);
-timeline.push(target);
+timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
     
