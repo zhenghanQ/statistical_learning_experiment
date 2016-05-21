@@ -5,14 +5,28 @@ var par_id = {
     questions: ['Please enter your participant ID']
 };
     
-var instructions_block = {
+var welcome = {
     type: "text",
-    text: "<p>In this experiment you will see images appear one at a time " +
-         "your job is simply to watch the images as they appear and press any key " +
-        "when you see a yellow circle appear on the screen.</p>",
-    timing_post_trial: 2000
+    text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
+          "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
+          "We'll show you the aline now.</p>",
+    cont_key: ['F']
+    timing_post_trial: 400
 };
-    
+ 
+String.prototype.format = function() {
+    var i = 0; args = arguments;
+    return this.replace(/{}/g, function () {
+        return typeof args[i] != 'undefined' ? args[i++] : '';
+    });
+}; 
+  
+var target = {
+    type: 'single-stim',
+    stimulus: 'Alien'
+    choices['F'],
+    timing_post_trial: 400
+}    
 var seq1 = [
     3,2,1,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,
     1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,
