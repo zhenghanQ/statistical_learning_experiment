@@ -11,7 +11,7 @@ var par_id = {
 var target_alien = {
     type: 'single-stim',
     stimulus: 'images/Alien1.png',
-    choices['F'],
+    choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
 };
