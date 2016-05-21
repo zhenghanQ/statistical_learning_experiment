@@ -14,14 +14,10 @@ String.prototype.format = function () {
 };
 
 
-function target() {
-    var exp_tar = 'images/{}.png'.format('Alien1');
-    return exp_tar
-};
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: target(),
+    stimulus: 'images/Alien1.png',
     choices['F'],
     response_ends_trial: true,
     timing_post_trial: 400
