@@ -18,7 +18,7 @@ function target() {
     return exp_tar
 };
 
-alert(target());
+//alert(target());
 
 var target_alien = {
     type: 'single-stim',
