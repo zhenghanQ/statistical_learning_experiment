@@ -2,7 +2,7 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Please enter your participant ID','target']
+    questions: ['Please enter your participant ID']
 };
  
 
