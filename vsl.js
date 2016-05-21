@@ -23,7 +23,7 @@ var pick_alien = {
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: pick_alien,
+    stimulus: pick_alien.tar_alien,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
