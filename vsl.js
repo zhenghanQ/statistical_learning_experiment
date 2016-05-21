@@ -18,11 +18,11 @@ function target() {
     return exp_tar
 };
 
-
+var targ_alien = target();
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: target(),
+    stimulus: targ_alien,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
