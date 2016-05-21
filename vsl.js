@@ -28,6 +28,7 @@ var target = {
     type: 'single-stim',
     stimulus: tar,
     choices['F'],
+    response_ends_trial: true,
     timing_post_trial: 400
 };
 
