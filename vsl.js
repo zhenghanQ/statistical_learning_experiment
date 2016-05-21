@@ -18,9 +18,9 @@ var target_alien = {
 
 var welcome = {
     type: "text",
-    text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
+    text: "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
           "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-          "We'll show you the aline now.</p>",
+          "We will show you the aline now.</p>",
     cont_key: ['F'],
     timing_post_trial: 400
 };
