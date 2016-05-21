@@ -18,11 +18,11 @@ function target() {
     return exp_tar
 };
 
-
+alert(target());
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: target(),
+    stimulus: 'images/Alien2.png',
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
