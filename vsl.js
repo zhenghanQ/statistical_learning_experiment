@@ -12,6 +12,12 @@ String.prototype.format = function () {
     });
 };
 
+function target() {
+    jsPsych.data.getLastTrialData();
+    var exp_tar = 'images/Alien{}.png'.format(data.respones['Q1']);
+    return exp_tar
+};
+
 
 
 var target_alien = {
