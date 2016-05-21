@@ -73,7 +73,6 @@ var struct_block = {
 };
     
 timeline.push(par_id);
-timeline.push(pick_alien)
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
