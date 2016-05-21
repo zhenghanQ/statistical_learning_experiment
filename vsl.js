@@ -12,17 +12,18 @@ String.prototype.format = function () {
     });
 };
 
-function target() {
-    var data = jsPsych.data.getLastTrialData();
-    var exp_tar = 'images/Alien{}.png'.format(data.responses['Q0']);
-    return exp_tar
-};
-
-alert(target());
+var pick_alien = {
+    timeline: [par_id],
+    conditional_function: function() {
+        var alien = jsPsych.data.getLastTrialData();
+        var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
+        return tar_alien;
+    }
+}
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: 'images/Alien2.png',
+    stimulus: pick_alien,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -72,6 +73,7 @@ var struct_block = {
 };
     
 timeline.push(par_id);
+timeline.push(pick_alien)
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
