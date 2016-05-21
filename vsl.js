@@ -22,7 +22,7 @@ function target() {
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: 'images/Alien1.png',
+    stimulus: target(),
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
