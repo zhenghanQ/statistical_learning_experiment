@@ -13,8 +13,8 @@ String.prototype.format = function () {
 };
 
 function target() {
-    jsPsych.data.getLastTrialData();
-    var exp_tar = 'images/Alien{}.png'.format('2');
+    var alien = jsPsych.data.getLastTrialData();
+    var exp_tar = 'images/Alien{}.png'.format(alien.responses['Q1']);
     return exp_tar
 };
 
