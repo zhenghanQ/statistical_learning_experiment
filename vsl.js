@@ -66,7 +66,7 @@ var struct_block = {
     
 timeline.push(par_id);
 timeline.push(target);
-timeline.push(instructions_block);
+timeline.push(welcome);
 timeline.push(struct_block);
     
 jsPsych.init({
