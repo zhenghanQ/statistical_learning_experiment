@@ -21,10 +21,12 @@ String.prototype.format = function() {
         return typeof args[i] != 'undefined' ? args[i++] : '';
     });
 }; 
+
+var tar = 'Alien{}'.format(exp_tar_cond);
   
 var target = {
     type: 'single-stim',
-    stimulus: 'Alien{}.png'.format(par_id.responses['Q1']);,
+    stimulus: tar,
     choices['F'],
     timing_post_trial: 400
 };
@@ -69,6 +71,7 @@ timeline.push(struct_block);
     
 jsPsych.init({
     timeline: timeline,
+    fullscreen: true,
     on_finish: function() {
         jsPsych.data.localSave('timing_test.csv', 'csv');
     }
