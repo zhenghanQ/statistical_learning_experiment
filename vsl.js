@@ -10,7 +10,7 @@ var welcome = {
     text: "<p>Hi there, today you're going to see some aliens line up to enter a cool spaceship. " +
           "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
           "We'll show you the aline now.</p>",
-    cont_key: ['F']
+    cont_key: ['F'],
     timing_post_trial: 400
 };
 
