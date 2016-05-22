@@ -12,20 +12,18 @@ String.prototype.format = function () {
     });
 };
 
-var pick_alien = {
-    timeline: [par_id],
-    conditional_function: function() {
-        var alien = jsPsych.data.getLastTrialData();
-        var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
-        return tar_alien;
-    }
-};
 
+function get_alien_target() {
+    var a_target = jsPsych.data.getDataByTimelineNode(par_id.responses['Q1']);
+    return 'images/Alien{}'.format(a_target);
+}
 
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: pick_alien.conditional_function(),
+    stimulus: function() {
+        return get_alien_target()
+    }
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
