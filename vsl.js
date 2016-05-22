@@ -14,12 +14,12 @@ String.prototype.format = function () {
 
 
 
-var num = jsPsych.data.getLastTrialData();
-
-
 var target_alien = {
     type: 'single-stim',
-    stimulus: num.responses['Q1'],
+    stimulus: function() {
+        var num = jsPsych.data.getLastTrialData();
+        return num.responses['Q1'];
+    },
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
