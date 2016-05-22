@@ -19,7 +19,7 @@ var pick_alien = {
         var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
         return tar_alien
     }
-}
+};
 
 var target_alien = {
     type: 'single-stim',
