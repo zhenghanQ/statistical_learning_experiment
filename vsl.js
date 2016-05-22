@@ -17,14 +17,14 @@ var tar = {
     conditional_function: function() {
         var num = jsPsych.data.getLastTrialData();
         var a_pick = 'images/Alien{}.png'.format(num.responses['Q1']);
-        return 'images/Alien2.png';
     }
+    var a = a_pick
 };
 
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: tar,
+    stimulus: tar.a_pick,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
