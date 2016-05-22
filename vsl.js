@@ -16,15 +16,18 @@ var tar = {
     timeline: [par_id],
     conditional_function: function() {
         var num = jsPsych.data.getLastTrialData();
-        var a_pick = 'images/Alien{}.png'.format(num.responses['Q1']);
-        return a_pick
+        if (num.responses['Q1'] === '1') {
+            return 'images/Alien1.png'
+        } else if (num.responses['Q1'] === '2') {
+            return 'images/Alien2.png'
+        } 
     }
 };
 
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: tar.conditional_function(),
+    stimulus: [tar],
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -73,7 +76,7 @@ var struct_block = {
      response_ends_trial: false
 };
     
-timeline.push(tar);
+
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
