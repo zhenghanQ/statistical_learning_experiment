@@ -76,7 +76,7 @@ var struct_block = {
      response_ends_trial: false
 };
     
-
+timeline.push(par_id);
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
