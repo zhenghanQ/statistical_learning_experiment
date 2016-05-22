@@ -19,7 +19,7 @@ var tar = {
         var a_pick = 'images/Alien{}.png'.format(num.responses['Q1']);
         return a_pick
     }
-}
+};
 
 
 var target_alien = {
