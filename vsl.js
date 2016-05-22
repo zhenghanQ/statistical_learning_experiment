@@ -25,7 +25,7 @@ var pick_alien = {
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: pick_alien(),
+    stimulus: pick_alien.conditional_function(),
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
