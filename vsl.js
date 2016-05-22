@@ -16,8 +16,7 @@ var pick_alien = {
     timeline: [par_id],
     conditional_function: function() {
         var alien = jsPsych.data.getLastTrialData();
-        var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1'].toString());
-        return tar_alien;
+        var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
     }
 }
 
