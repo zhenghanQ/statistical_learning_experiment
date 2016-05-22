@@ -17,8 +17,8 @@ String.prototype.format = function () {
 var target_alien = {
     type: 'single-stim',
     stimulus: function() {
-        var num = jsPsych.data.getDataByTimelineNode(par_id);
-        return 'images/Alien1.png'//.format(num.responses['Q1']);
+        var num = jsPsych.data.getLastTrialData();
+        return 'images/Alien{}.png'.format(num.responses[19]);
     },
     choices: ['F'],
     response_ends_trial: true,
