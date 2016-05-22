@@ -17,7 +17,7 @@ var tar = {
     conditional_function: function() {
         var num = jsPsych.data.getLastTrialData();
         var a_pick = 'images/Alien{}.png'.format(num.responses['Q1']);
-        return a_pick
+        return 'images/Alien2.png';
     }
 };
 
