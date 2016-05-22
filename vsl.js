@@ -29,9 +29,9 @@ var target_alien = {
         var num = jsPsych.data.getLastTrialData();
         return 'images/Alien{}.png'.format(num.responses[7]);
     },
-    prompt: "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
+    prompt: "Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
              "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-             "The special alien is shown above.</p>",
+             "The special alien is shown above.",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
