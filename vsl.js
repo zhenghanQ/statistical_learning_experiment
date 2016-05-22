@@ -12,8 +12,6 @@ String.prototype.format = function () {
     });
 };
 
-
-
 var target_alien = {
     type: 'single-stim',
     stimulus: function() {
@@ -33,7 +31,6 @@ var welcome = {
     cont_key: ['F'],
     timing_post_trial: 400
 };
-
 
 var seq1 = [
     3
