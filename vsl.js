@@ -18,7 +18,7 @@ var target_alien = {
     type: 'single-stim',
     stimulus: function() {
         var num = jsPsych.data.getLastTrialData();
-        return 'images/Alien{}.png'.format(num.responses[10]);
+        return 'images/Alien{}.png'.format(num.responses[7]);
     },
     choices: ['F'],
     response_ends_trial: true,
