@@ -16,14 +16,14 @@ var pick_alien = {
     timeline: [par_id],
     conditional_function: function() {
         var alien = jsPsych.data.getLastTrialData();
-        var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
-        {'x': tar_alien}
+        var tar_alien = {'x': 'images/Alien{}.png'.format(alien.responses['Q1']);}
+
     }
 }
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: pick_alien.x,
+    stimulus: pick_alien.tar_alien.x,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
