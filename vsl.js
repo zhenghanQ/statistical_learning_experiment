@@ -17,12 +17,13 @@ var pick_alien = {
     conditional_function: function() {
         var alien = jsPsych.data.getLastTrialData();
         var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
+        {'x': tar_alien}
     }
 }
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: pick_alien.tar_alien,
+    stimulus: pick_alien.x,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
