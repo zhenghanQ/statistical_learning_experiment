@@ -12,21 +12,14 @@ String.prototype.format = function () {
     });
 };
 
-var tar = {
-    conditional_function: function() {
-        var num = jsPsych.data.getLastTrialData();
-        if (num.responses['Q1'] === '1') {
-            return 'images/Alien1.png'
-        } else if (num.responses['Q1'] === '2') {
-            return 'images/Alien2.png'
-        } 
-    }
-};
+
+
+var num = jsPsych.data.getLastTrialData();
 
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: [tar],
+    stimulus: num.responses['Q1'],
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
