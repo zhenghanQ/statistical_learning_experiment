@@ -64,12 +64,18 @@ var struct_block = {
 timeline.push(par_id);  
 timeline.push(target_alien);
 timeline.push(struct_block);
-    
-jsPsych.init({
-    timeline: timeline,
-    fullscreen: false,
-    on_finish: function() {
-        jsPsych.data.displayData();
-        //jsPsych.data.localSave('timing_test.csv', 'csv');
+ 
+var target_images = ['images/Alien1.png','images/Alien2.png'] 
+
+jsPsych.preloadImages(target_images, function(){startExperiment(); });
+
+function startExperiment(){    
+    jsPsych.init({
+        timeline: timeline,
+        fullscreen: false,
+        on_finish: function() {
+            jsPsych.data.displayData();
+            //jsPsych.data.localSave('timing_test.csv', 'csv');
     }
 });
+}
