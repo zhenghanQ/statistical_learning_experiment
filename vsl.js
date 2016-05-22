@@ -66,7 +66,7 @@ timeline.push(struct_block);
     
 jsPsych.init({
     timeline: timeline,
-    fullscreen: true,
+    fullscreen: false,
     on_finish: function() {
         jsPsych.data.displayData();
         //jsPsych.data.localSave('timing_test.csv', 'csv');
