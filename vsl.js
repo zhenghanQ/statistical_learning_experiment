@@ -65,17 +65,14 @@ timeline.push(par_id);
 timeline.push(target_alien);
 timeline.push(struct_block);
  
-var images = ['images/Alien1.png', 'images/Alien2.png']; 
 
-jsPsych.preloadImages(images, function(){ startExperiment(); });
 
-function startExperiment(){    
-    jsPsych.init({
-        timeline: timeline,
-        fullscreen: false,
-        on_finish: function() {
-            jsPsych.data.displayData();
-            //jsPsych.data.localSave('timing_test.csv', 'csv');
+jsPsych.init({
+    timeline: timeline,
+    fullscreen: false,
+    on_finish: function() {
+        jsPsych.data.displayData();
+        //jsPsych.data.localSave('timing_test.csv', 'csv');
      }
-    });
-}
+});
+
