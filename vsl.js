@@ -4,7 +4,8 @@ var par_id = {
     type: 'survey-text',
     questions: ['Enter number specification Number','Enter your participant number']
 };
- 
+
+/* 
 var welcome = {
     type: "text",
     text: "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
@@ -13,6 +14,7 @@ var welcome = {
     cont_key: ['F'],
     timing_post_trial: 400
 };
+*/
 
 String.prototype.format = function () {
     var i = 0, args = arguments;
@@ -27,6 +29,9 @@ var target_alien = {
         var num = jsPsych.data.getDataByTimelineNode();
         return 'images/Alien{}.png'.format(num.responses[7]);
     },
+    prompt: "Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
+            "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
+            "The target alien is shown above",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -55,8 +60,7 @@ var struct_block = {
      response_ends_trial: false
 };
 
-timeline.push(par_id);    
-timeline.push(welcome);
+timeline.push(par_id);  
 timeline.push(target_alien);
 timeline.push(struct_block);
     
