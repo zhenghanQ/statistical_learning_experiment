@@ -18,7 +18,7 @@ var target_alien = {
     type: 'single-stim',
     stimulus: function() {
         var num = jsPsych.data.getDataByTimelineNode(par_id);
-        return 'images/Alien{}.png'.format(num.responses.Q1);
+        return 'images/Alien{}.png'.format(num.responses['Q1']);
     },
     choices: ['F'],
     response_ends_trial: true,
