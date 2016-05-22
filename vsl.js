@@ -13,7 +13,6 @@ String.prototype.format = function () {
 };
 
 var tar = {
-    timeline: [par_id],
     conditional_function: function() {
         var num = jsPsych.data.getLastTrialData();
         if (num.responses['Q1'] === '1') {
@@ -27,7 +26,7 @@ var tar = {
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: [tar],
+    stimulus: [par_id,tar],
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -76,7 +75,6 @@ var struct_block = {
      response_ends_trial: false
 };
     
-timeline.push(par_id);
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
