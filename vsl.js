@@ -2,7 +2,8 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Enter number specification Number','Enter your participant number']
+    questions: ['Enter number specification Number','Enter your participant number'],
+    timing_post_trial: 1000
 };
 
 /* 
