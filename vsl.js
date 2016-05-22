@@ -17,9 +17,11 @@ var pick_alien = {
     conditional_function: function() {
         var alien = jsPsych.data.getLastTrialData();
         var tar_alien = 'images/Alien{}.png'.format(alien.responses['Q1']);
-        return alert(tar_alien);
+        return tar_alien;
     }
 };
+
+alert(tar_alien);
 
 var target_alien = {
     type: 'single-stim',
