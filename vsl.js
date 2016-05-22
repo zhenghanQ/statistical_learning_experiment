@@ -26,7 +26,7 @@ var tar = {
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: [par_id,tar],
+    stimulus: [tar],
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -74,7 +74,8 @@ var struct_block = {
      timing_post_trial: 200,
      response_ends_trial: false
 };
-    
+
+timeline.push(par_id);    
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
