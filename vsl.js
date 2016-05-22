@@ -71,7 +71,7 @@ jsPsych.preloadImages(target_images, function(){ startExperiment(); });
 
 function startExperiment(){    
     jsPsych.init({
-        timeline: [timeline],
+        timeline: timeline,
         fullscreen: false,
         on_finish: function() {
             jsPsych.data.displayData();
