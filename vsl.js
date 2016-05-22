@@ -77,6 +77,7 @@ jsPsych.init({
     timeline: timeline,
     fullscreen: false,
     on_finish: function() {
-        jsPsych.data.localSave('timing_test.csv', 'csv');
+        jsPsych.data.displayData();
+        //jsPsych.data.localSave('timing_test.csv', 'csv');
     }
 });
