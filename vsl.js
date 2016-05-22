@@ -2,7 +2,7 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Please enter your participant ID','question']
+    questions: ['Please enter your participant ID','enter your number']
 };
  
 String.prototype.format = function () {
@@ -12,18 +12,19 @@ String.prototype.format = function () {
     });
 };
 
-
-function get_alien_target() {
-    var a_target = jsPsych.data.getDataByTimelineNode(par_id.responses['Q1']);
-    return 'images/Alien{}'.format(a_target);
+var tar = {
+    timeline: [par_id],
+    conditional_function: function() {
+        var num = jsPsych.data.getLastTrialData();
+        var a_pick = 'images/Alien{}.png'.format(num.responses['Q1']);
+        return a_pick
+    }
 }
 
 
 var target_alien = {
     type: 'single-stim',
-    stimulus: function() {
-        return get_alien_target()
-    }
+    stimulus: tar,
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -72,7 +73,7 @@ var struct_block = {
      response_ends_trial: false
 };
     
-timeline.push(par_id);
+timeline.push(tar);
 timeline.push(target_alien);
 timeline.push(welcome);
 timeline.push(struct_block);
