@@ -2,7 +2,7 @@ var timeline = [];
     
 var par_id = {
     type: 'survey-text',
-    questions: ['Please enter your participant ID','enter your number']
+    questions: ['Enter number specification Number','Enter your participant number']
 };
  
 String.prototype.format = function () {
@@ -18,7 +18,7 @@ var target_alien = {
     type: 'single-stim',
     stimulus: function() {
         var num = jsPsych.data.getLastTrialData();
-        return 'images/Alien{}.png'.format(num.responses[19]);
+        return 'images/Alien{}.png'.format(num.responses[8]);
     },
     choices: ['F'],
     response_ends_trial: true,
