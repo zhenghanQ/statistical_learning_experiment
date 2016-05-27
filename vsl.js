@@ -50,24 +50,38 @@ var start_instructions = {
 };
 
 
+// displaying task instructions and target alien again
 var target_alien_reminder = {
     type: 'single-stim',
-    stimulus: 'images/Alien1.png',
+    stimulus: function() {
+        var num = jsPsych.data.getLastTrialData();
+        return 'images/Alien{}.png'.format(num.responses[7]);
+    },
+    prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
+             "one at a time on the screen as they line up. To keep track of our special alien press " +
+             "the spacebar whenever you see it.</p>",
     choices: ['F'],
     response_ends_trial: true,
-    timing_post_trial:400
+    timing_post_trial: 400
 };
 
 
+// the sequence of images to show
 var seq1 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
             3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
             3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3];
 
+
+// creates a javascript object that will be used in the for loop below
+// this helps with defining the familiarizaiton block
 var pics = [];
 pics['1'] = 'images/circle.png';
 pics['2'] = 'images/triangle.png';
 pics['3'] = 'images/trapezoid.png';
-    
+
+
+// creates the familiarization block
+// remember, the structure must be {'stimulus': 'path/to/image.png'}
 var img_block_1 = [];
 for (i=0; i<seq1.length; i++) {
     img_block_1.push({'stimulus': pics[seq1[i]]});  
