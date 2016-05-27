@@ -144,6 +144,7 @@ timeline.push(start_instructions);
 timeline.push(target_alien_reminder);
 timeline.push(struct_block);
 timeline.push(end_struck_block);
+timeline.push(forced_choice_block);
 
 // run the experiment, full screen, and tell it what to do once it's done
 jsPsych.init({
