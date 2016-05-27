@@ -115,7 +115,7 @@ for (i=0; i<seq2.length; i++) {
         img_block_2.push({'stimulus': '',
                           'prompt': 'Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last',
                           'choices': ['1','2'], 
-                          'timing_response': 160000,
+                          'timing_response': 1600000000,
                           'timing_post_trial': 200,
                           'response_ends_trial': true});
     } else {
