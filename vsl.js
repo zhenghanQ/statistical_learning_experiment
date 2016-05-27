@@ -71,6 +71,7 @@ var target_alien_reminder = {
     stimulus: 'images/Alien1.png',
     choices: ['F'],
     response_ends_trial: true,
+    timing_response: 100,
     timing_post_trial:400
 };
 
