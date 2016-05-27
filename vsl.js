@@ -45,12 +45,35 @@ var spaceship_ladder_block = {
      timing_post_trial: 400,
      response_ends_trial: true
 };
-//
+
+// reminder of target alien
+var target_alien_reminder = {
+    type: 'single-stim',
+    stimulus: function() {
+        var num = jsPsych.data.getLastTrialData();
+        return 'images/Alien{}.png'.format(num.responses[7]);
+    },
+    prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
+             "one at a time on the screen as they line up. To keep track of our special alien press " +
+             "the spacebar whenever you see it.</p>",
+    choices: ['F'],
+    response_ends_trial: true,
+    timing_post_trial: 400
+};
+
+
 //
 //
 
 var seq1 = [
-    3
+    3,1,2,3,2,2,1,2,3,2,1,2,3,2,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,2,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
+    3,1,2,3,2,2,1,2,3,2,1,2,3,3,1,1,1,2,2,2,3,3,3,2,1,1,2,3,2,1,2,3,2,1,1,2,3,2,1,1,2,2,3,3,2,3,2,1,
 ];
     
 var pics = [];
