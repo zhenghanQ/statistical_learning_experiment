@@ -80,13 +80,15 @@ pics['2'] = 'images/triangle.png';
 pics['3'] = 'images/trapezoid.png';
 
 
-// creates the familiarization block
+// creates the familiarization block sequence to be fed into struct_block
 // remember, the structure must be {'stimulus': 'path/to/image.png'}
 var img_block_1 = [];
 for (i=0; i<seq1.length; i++) {
     img_block_1.push({'stimulus': pics[seq1[i]]});  
 }
 
+
+// this is the strucutred block
 var struct_block = {
      type: 'single-stim',
      choices: ['F'],
@@ -96,6 +98,9 @@ var struct_block = {
      response_ends_trial: false
 };
 
+
+// add everything to the timeline. 
+// in javascript object.push() is equivalent to what you get in python for object.append()
 timeline.push(par_id);  
 timeline.push(target_alien);
 timeline.push(start_instructions);
@@ -103,7 +108,7 @@ timeline.push(target_alien_reminder);
 timeline.push(struct_block);
  
 
-
+// run the experiment, full screen, and tell it what to do once it's done
 jsPsych.init({
     timeline: timeline,
     fullscreen: true,
