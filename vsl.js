@@ -127,6 +127,15 @@ for (i=0; i<seq2.length; i++) {
     }
 }
 
+// create the forced choice block
+var forced_choice_block = {
+     type: 'single-stim',
+     timeline: img_block_2,
+     timing_response: 800,
+     timing_post_trial: 200,
+     response_ends_trial: false
+};
+
 // add everything to the timeline. 
 // in javascript object.push() is equivalent to what you get in python for object.append()
 timeline.push(par_id);  
