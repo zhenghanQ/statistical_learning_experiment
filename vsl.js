@@ -45,9 +45,8 @@ var start_instructions = {
      type: 'single-stim',
      timeline: spaceship_ladder,
      choices: ['F'],
-     timing_response: 800,
-     timing_post_trial: 200,
-     response_ends_trial: false
+     timing_post_trial: 400,
+     response_ends_trial: true
 };
 
 
@@ -56,7 +55,6 @@ var target_alien_reminder = {
     stimulus: 'images/Alien1.png',
     choices: ['F'],
     response_ends_trial: true,
-    timing_response: 100,
     timing_post_trial:400
 };
 
