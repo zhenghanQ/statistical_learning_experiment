@@ -149,7 +149,6 @@ var forced_choice_block = {
 };
 
 // add everything to the timeline. 
-// in javascript object.push() is equivalent to what you get in python for object.append()
 timeline.push(par_id);  
 timeline.push(target_alien);
 timeline.push(start_instructions);
