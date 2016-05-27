@@ -93,7 +93,7 @@ var struct_block = {
      type: 'single-stim',
      choices: ['F'],
      timeline: img_block_1,
-     timing_response: 800,
+     timing_response: 796,
      timing_post_trial: 200,
      response_ends_trial: false
 };
