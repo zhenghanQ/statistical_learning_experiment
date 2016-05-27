@@ -35,9 +35,9 @@ var target_alien = {
 
 // array containing the pictures for the next set of instructins
 var spaceship_ladder = [
-    'images/Spaceship1.bmp', 'images/Spaceship2.bmp',
-    'images/Spaceship3.bmp', 'images/Ladder1.bmp',
-    'images/Ladder2.bmp', 'images/Ladder3.bmp'];
+    'images/Alien2.png', 'images/Alien1.png',
+    'images/Alien1.png', 'images/Alien2.png',
+    'images/Alien1.png', 'images/Alien1.png'];
 
 
 // adding the above array of images/instructions to the timeline
