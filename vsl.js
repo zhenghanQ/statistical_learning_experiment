@@ -143,7 +143,7 @@ for (i=0; i<seq2.length; i++) {
 var forced_choice_block = {
      type: 'single-stim',
      timeline: img_block_2,
-     timing_response: 800,
+     timing_response: 796,
      timing_post_trial: 200,
      response_ends_trial: false
 };
