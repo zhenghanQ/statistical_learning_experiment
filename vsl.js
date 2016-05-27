@@ -134,7 +134,7 @@ for (i=0; i<seq2.length; i++) {
     } else {
         img_block_2.push({'stimulus': pics[seq2[i]],
                           'response_ends_trial': false,
-                          'timing_response': 800,
+                          'timing_response': 796,
                           'timing_post_trial': 200});
     }
 }
