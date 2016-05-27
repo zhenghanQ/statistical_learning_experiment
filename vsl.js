@@ -98,6 +98,13 @@ var struct_block = {
      response_ends_trial: false
 };
 
+// test phase instructions begin
+var end_struck_block = {
+  type: 'text',
+  text: 'Great job! We are now going to give you another set of instructions please pay attention!'
+  choices: ['F'],
+  response_ends_trial: true
+};
 
 // add everything to the timeline. 
 // in javascript object.push() is equivalent to what you get in python for object.append()
@@ -106,7 +113,7 @@ timeline.push(target_alien);
 timeline.push(start_instructions);
 timeline.push(target_alien_reminder);
 timeline.push(struct_block);
- 
+timeline.push(end_struck_block);
 
 // run the experiment, full screen, and tell it what to do once it's done
 jsPsych.init({
