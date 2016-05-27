@@ -108,7 +108,10 @@ var seq2 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
             3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3];
             
 
-
+// creats the array of images to be show for the focrced choice
+// since it is zero indexed, the first image is just a blank screen
+// the order in the seq2 variable should reflect this
+// the order in seq2 should also build in the fact that every 7th stimulus will not be presented
 var img_block_2 = [];
 for (i=0; i<seq2.length; i++) {
     if (i % 7 === 0 && i !== 0) {
