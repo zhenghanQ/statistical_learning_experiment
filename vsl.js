@@ -1,22 +1,14 @@
 var timeline = [];
-    
+
+// get participant information, and task condition    
 var par_id = {
     type: 'survey-text',
     questions: ['Enter number specification Number','Enter your participant number'],
     timing_post_trial: 1000
 };
 
-/* 
-var welcome = {
-    type: "text",
-    text: "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
-          "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-          "We will show you the aline now.</p>",
-    cont_key: ['F'],
-    timing_post_trial: 400
-};
-*/
 
+// helper function for defining task condition
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -24,6 +16,7 @@ String.prototype.format = function () {
     });
 };
 
+// display target alien along with intial instructions
 var target_alien = {
     type: 'single-stim',
     stimulus: function() {
@@ -37,6 +30,24 @@ var target_alien = {
     response_ends_trial: true,
     timing_post_trial: 400
 };
+
+// array containing the pictures for the next set of instructins
+var spaceship_ladder = [
+    'images/Spaceship1.bmp', 'images/Spaceship2.bmp',
+    'images/Spaceship3.bmp', 'images/Ladder1.bmp',
+    'images/Ladder2.bmp', 'images/Ladder3.bmp'];
+
+// adding the above array of images/instructions to the timeline
+var spaceship_ladder_block = {
+     type: 'single-stim',
+     choices: ['F'],
+     timeline: spaceship_ladder,
+     timing_post_trial: 400,
+     response_ends_trial: true
+};
+//
+//
+//
 
 var seq1 = [
     3
