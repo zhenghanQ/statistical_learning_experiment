@@ -16,6 +16,7 @@ String.prototype.format = function () {
     });
 };
 
+
 // display target alien along with intial instructions
 var target_alien = {
     type: 'single-stim',
@@ -31,11 +32,13 @@ var target_alien = {
     timing_post_trial: 400
 };
 
+
 // array containing the pictures for the next set of instructins
 var spaceship_ladder = [
     'images/Spaceship1.bmp', 'images/Spaceship2.bmp',
     'images/Spaceship3.bmp', 'images/Ladder1.bmp',
     'images/Ladder2.bmp', 'images/Ladder3.bmp'];
+
 
 // adding the above array of images/instructions to the timeline
 var spaceship_ladder_block = {
@@ -45,6 +48,7 @@ var spaceship_ladder_block = {
      timing_post_trial: 400,
      response_ends_trial: true
 };
+
 
 // reminder of target alien
 var target_alien_reminder = {
