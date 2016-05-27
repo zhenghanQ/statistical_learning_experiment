@@ -105,6 +105,28 @@ var end_struck_block = {
   cont_key: ['F']
 };
 
+var seq2 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
+            3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
+            3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3];
+            
+
+
+var img_block_2 = [];
+for (i=0; i<seq2.length; i++) {
+    if (i % 7 === 0) {
+        img_block_2.push({'stimulus': ,
+                          'prompt': 'Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last',
+                          'choices': ['1','2'], 
+                          'response_ends_trial': true,
+                          'timing_post_trial': 200}})
+    } else {
+        img_block_2.push({'stimulus': pics[seq2[i]],
+                          'response_ends_trial': false,
+                          'timing_response': 800
+                          'timing_post_trial': 200})
+    }
+}
+
 // add everything to the timeline. 
 // in javascript object.push() is equivalent to what you get in python for object.append()
 timeline.push(par_id);  
