@@ -67,7 +67,9 @@ var target_alien_reminder = {
 
 
 // the sequence of images to show
-var seq1 = [3,1];
+var seq1 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
+            3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
+            3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3];
 
 
 // creates a javascript object that will be used in the for loop below
