@@ -118,6 +118,14 @@ for (i=0; i<seq2.length; i++) {
                           'timing_response': 1600000000,
                           'timing_post_trial': 200,
                           'response_ends_trial': true});
+    } else if (i === 0) {
+        img_block_2.push({'stimulus': '',
+                          'prompt': '',
+                          'choices': ['1','2'], 
+                          'timing_response': 200,
+                          'timing_post_trial': 200,
+                          'response_ends_trial': false});
+
     } else {
         img_block_2.push({'stimulus': pics[seq2[i]],
                           'response_ends_trial': false,
