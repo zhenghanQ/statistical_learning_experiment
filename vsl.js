@@ -33,7 +33,7 @@ var target_alien = {
 };
 
 var target_alien_variable = jsPsych.data.getLastTimelineData();
-
+console.log(target_alien_variable);
 
 // array containing the pictures for the next set of instructins
 var spaceship_ladder = [{'stimulus': 'images/Spaceship1.bmp'}, 
