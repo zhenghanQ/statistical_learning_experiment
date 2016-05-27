@@ -41,31 +41,15 @@ var spaceship_ladder = [
 
 
 // adding the above array of images/instructions to the timeline
-var spaceship_ladder_block = {
+var start_instructions = {
      type: 'single-stim',
      choices: ['F'],
      timeline: spaceship_ladder,
-     timing_post_trial: 400,
-     timing_response: 200,
-     response_ends_trial: true
+     timing_response: 800,
+     timing_post_trial: 200,
+     response_ends_trial: false
 };
 
-/*
-// reminder of target alien
-var target_alien_reminder = {
-    type: 'single-stim',
-    stimulus: function() {
-        var num = jsPsych.data.getLastTrialData();
-        return 'images/Alien{}.png'.format(num.responses[7]);
-    },
-    prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
-             "one at a time on the screen as they line up. To keep track of our special alien press " +
-             "the spacebar whenever you see it.</p>",
-    choices: ['F'],
-    response_ends_trial: true,
-    timing_post_trial: 400
-};
-*/
 
 var target_alien_reminder = {
     type: 'single-stim',
@@ -113,7 +97,7 @@ var struct_block = {
 
 timeline.push(par_id);  
 timeline.push(target_alien);
-timeline.push(spaceship_ladder_block);
+timeline.push(start_instructions);
 timeline.push(target_alien_reminder);
 timeline.push(struct_block);
  
