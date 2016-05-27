@@ -32,7 +32,7 @@ var target_alien = {
     timing_post_trial: 400
 };
 
-jsPsych.data.getLastTimelineData()
+var target_alien_variable = jsPsych.data.getLastTimelineData();
 
 
 // array containing the pictures for the next set of instructins
