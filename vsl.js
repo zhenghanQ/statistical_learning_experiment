@@ -46,6 +46,7 @@ var spaceship_ladder_block = {
      choices: ['F'],
      timeline: spaceship_ladder,
      timing_post_trial: 400,
+     timing_response: 200,
      response_ends_trial: true
 };
 
