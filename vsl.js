@@ -113,7 +113,7 @@ var seq2 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
 
 var img_block_2 = [];
 for (i=0; i<seq2.length; i++) {
-    if (i % 7 === 0) && (i !== 0) {
+    if (i % 7 === 0 && i !== 0) {
         img_block_2.push({'stimulus': '',
                           'prompt': 'Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last',
                           'choices': ['1','2'], 
