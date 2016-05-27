@@ -40,7 +40,10 @@ var spaceship_ladder = ['images/Spaceship1.bmp', 'images/Spaceship2.bmp', 'image
 // adding the above array of images/instructions to the timeline
 var start_instructions = {
      type: 'single-stim',
-     timeline: spaceship_ladder
+     timeline: spaceship_ladder,
+     timing_response: 800,
+     timing_post_trial: 200,
+     response_ends_trial: false
 };
 
 
