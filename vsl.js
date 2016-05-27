@@ -102,8 +102,7 @@ var struct_block = {
 var end_struck_block = {
   type: 'text',
   text: 'Great job! We are now going to give you another set of instructions please pay attention!',
-  choices: ['F'],
-  response_ends_trial: true
+  cont_key: ['F']
 };
 
 // add everything to the timeline. 
