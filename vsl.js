@@ -49,7 +49,7 @@ var spaceship_ladder_block = {
      response_ends_trial: true
 };
 
-
+/*
 // reminder of target alien
 var target_alien_reminder = {
     type: 'single-stim',
@@ -64,10 +64,16 @@ var target_alien_reminder = {
     response_ends_trial: true,
     timing_post_trial: 400
 };
+*/
 
+var target_alien_reminder = {
+    type: 'single-stim',
+    stimulus: 'images/Alien1.png',
+    choices: ['F'],
+    response_ends_trial: true,
+    timing_post_trial:400
+};
 
-//
-//
 
 /*
 var seq1 = [
@@ -105,6 +111,8 @@ var struct_block = {
 
 timeline.push(par_id);  
 timeline.push(target_alien);
+timeline.push(spaceship_ladder_block);
+timeline.push(target_alien_reminder);
 timeline.push(struct_block);
  
 
