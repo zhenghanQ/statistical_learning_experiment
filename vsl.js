@@ -118,12 +118,12 @@ for (i=0; i<seq2.length; i++) {
                           'prompt': 'Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last',
                           'choices': ['1','2'], 
                           'response_ends_trial': true,
-                          'timing_post_trial': 200}})
+                          'timing_post_trial': 200});
     } else {
         img_block_2.push({'stimulus': pics[seq2[i]],
                           'response_ends_trial': false,
                           'timing_response': 800
-                          'timing_post_trial': 200})
+                          'timing_post_trial': 200});
     }
 }
 
