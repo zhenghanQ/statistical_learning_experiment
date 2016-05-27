@@ -41,6 +41,7 @@ var spaceship_ladder = ['images/Spaceship1.bmp', 'images/Spaceship2.bmp', 'image
 var start_instructions = {
      type: 'single-stim',
      timeline: spaceship_ladder,
+     choices: ['F'],
      timing_response: 800,
      timing_post_trial: 200,
      response_ends_trial: false
