@@ -54,7 +54,7 @@ var start_instructions = {
 var target_alien_reminder = {
     type: 'single-stim',
     stimulus: function() {
-        var num = jsPsych.data.getDataByTimelineNode(0.0-1.0);
+        var num = jsPsych.data.getDataByTimelineNode('0.0-1.0');
         return 'images/Alien{}.png'.format(num.responses[7]);
     },
     prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
