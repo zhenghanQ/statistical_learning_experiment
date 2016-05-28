@@ -184,6 +184,7 @@ timeline.push(target_alien_reminder);
 timeline.push(struct_block);
 timeline.push(end_struck_block);
 timeline.push(forced_choice_explained);
+timeline.push(forced_choiced_exp_cont);
 timeline.push(forced_choice_block);
 
 
@@ -196,4 +197,3 @@ jsPsych.init({
         //jsPsych.data.localSave('timing_test.csv', 'csv');
      }
 });
-
