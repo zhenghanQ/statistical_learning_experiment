@@ -102,7 +102,7 @@ var struct_block = {
 // test phase instructions begin
 var end_struck_block = {
   type: 'text',
-  text: 'Great job! We are now going to give you another set of instructions please pay attention!',
+  text: '<h2>Great job! We are now going to give you another set of instructions please pay attention!</h2>',
   cont_key: ['F']
 };
 
