@@ -25,9 +25,9 @@ var target_alien = {
         var num = jsPsych.data.getLastTrialData();
         return 'images/Alien{}.png'.format(num.responses[7]);
     },
-    prompt:  "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
+    prompt:  "<h3><p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
              "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-             "The special alien is shown above.</p>",
+             "The special alien is shown above.</p></h3>",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -58,9 +58,9 @@ var target_alien_reminder = {
         var num = jsPsych.data.getDataByTrialIndex(1);
         return num.stimulus;
     },
-    prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
+    prompt:  "<h3><p>Remember, this is the special alien to keep track of. The aliens will appear " +
              "one at a time on the screen as they line up. To keep track of our special alien press " +
-             "the spacebar whenever you see it.</p>",
+             "the spacebar whenever you see it.</p></h3>",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -102,7 +102,7 @@ var struct_block = {
 // test phase instructions begin
 var end_struck_block = {
   type: 'text',
-  text: '<h2>Great job! We are now going to give you another set of instructions please pay attention!</h2>',
+  text: '<h3>Great job! We are now going to give you another set of instructions please pay attention!</h3>',
   cont_key: ['F']
 };
 
@@ -124,9 +124,9 @@ var forced_choice_explained = {
 // more forced choice explanation
 var forced_choiced_exp_cont = {
     type: 'text',
-    text: "<h2><p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
+    text: "<h3><p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
           "that might have lined up together and the last three will belong to another group of aliens " +
-          "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p></h2>",
+          "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p></h3>",
     cont_key: ['F']
 };
 
@@ -144,7 +144,7 @@ var img_block_2 = [];
 for (i=0; i<seq2.length; i++) {
     if (i % 7 === 0 && i !== 0) {
         img_block_2.push({'stimulus': '',
-                          'prompt': '</h2>Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last</h2>',
+                          'prompt': '</h3>Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last</h3>',
                           'choices': ['1','2'], 
                           'timing_response': 1600000000,
                           'timing_post_trial': 200,
