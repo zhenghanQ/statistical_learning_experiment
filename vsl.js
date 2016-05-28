@@ -35,10 +35,10 @@ var target_alien = {
 
 
 // array containing the pictures for the next set of instructins
-var spaceship_ladder = [{'stimulus': 'images/Spaceship1.bmp'}, 
-{'stimulus': 'images/Spaceship2.bmp'}, {'stimulus': 'images/Spaceship3.bmp'}, 
-{'stimulus':'images/Ladder1.bmp'}, {'stimulus': 'images/Ladder2.bmp'}, 
-{'stimulus': 'images/Ladder3.bmp'}];
+var spaceship_ladder = [
+    {'stimulus': 'images/Spaceship1.bmp'}, {'stimulus': 'images/Spaceship2.bmp'},
+    {'stimulus': 'images/Spaceship3.bmp'}, {'stimulus':'images/Ladder1.bmp'}, 
+    {'stimulus': 'images/Ladder2.bmp'}, {'stimulus': 'images/Ladder3.bmp'}];
 
 
 // adding the above array of images/instructions to the timeline
@@ -105,6 +105,12 @@ var end_struck_block = {
   text: 'Great job! We are now going to give you another set of instructions please pay attention!',
   cont_key: ['F']
 };
+
+
+var forced_choiced_explained = [
+    {'stimulus': 'images/Ladder4.bmp'},{'stimulus': 'images/Ladder6.bmp'}, 
+    {'stimulus': 'images/Ladder7.bmp'}, {'stimulus':'images/Ladder8.bmp'},
+    {'stimulus': 'images/Ladder10.bmp'}];
 
 
 // sequence of images for the forced choice portion of the experimet
