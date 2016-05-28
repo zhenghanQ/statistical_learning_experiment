@@ -106,12 +106,13 @@ var end_struck_block = {
   cont_key: ['F']
 };
 
-
+// array of images for forced choice instructions
 var forced_choice_images = [
     {'stimulus': 'images/Ladder4.bmp'},{'stimulus': 'images/Ladder6.bmp'}, 
     {'stimulus': 'images/Ladder7.bmp'}, {'stimulus':'images/Ladder8.bmp'},
     {'stimulus': 'images/Ladder10.bmp'}];
 
+// the forced choice explanation
 var forced_choice_explained = {
      type: 'single-stim',
      timeline: forced_choice_images,
@@ -120,6 +121,14 @@ var forced_choice_explained = {
      response_ends_trial: true
 };
 
+// more forced choice explanation
+var forced_choiced_exp_cont = {
+    type: 'text',
+    text: "<p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
+          "that might have lined up together and the last three will belong to another group of aliens " +
+          "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p>"
+    cont_key: ['F']
+};
 
 // sequence of images for the forced choice portion of the experimet
 var seq2 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
