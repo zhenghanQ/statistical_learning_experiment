@@ -1,5 +1,6 @@
 var timeline = [];
 
+
 // get participant information, and task condition    
 var par_id = {
     type: 'survey-text',
