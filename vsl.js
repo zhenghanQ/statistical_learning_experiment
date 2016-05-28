@@ -105,6 +105,8 @@ var end_struck_block = {
   cont_key: ['F']
 };
 
+
+// sequence of images for the forced choice portion of the experimet
 var seq2 = [3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
             3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,
             3,1,2,1,2,3,2,1,2,1,2,3,1,2,3,3,1,2,1,2,3,2,1,2,1,2,3,1,2,3];
@@ -139,6 +141,7 @@ for (i=0; i<seq2.length; i++) {
     }
 }
 
+
 // create the forced choice block
 var forced_choice_block = {
      type: 'single-stim',
@@ -148,6 +151,7 @@ var forced_choice_block = {
      response_ends_trial: false
 };
 
+
 // add everything to the timeline. 
 timeline.push(par_id);  
 timeline.push(target_alien);
@@ -156,6 +160,7 @@ timeline.push(target_alien_reminder);
 timeline.push(struct_block);
 timeline.push(end_struck_block);
 timeline.push(forced_choice_block);
+
 
 // run the experiment, full screen, and tell it what to do once it's done
 jsPsych.init({
