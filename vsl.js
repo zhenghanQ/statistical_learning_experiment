@@ -107,10 +107,18 @@ var end_struck_block = {
 };
 
 
-var forced_choiced_explained = [
+var forced_choice_images = [
     {'stimulus': 'images/Ladder4.bmp'},{'stimulus': 'images/Ladder6.bmp'}, 
     {'stimulus': 'images/Ladder7.bmp'}, {'stimulus':'images/Ladder8.bmp'},
     {'stimulus': 'images/Ladder10.bmp'}];
+
+var forced_choice_explained = {
+     type: 'single-stim',
+     timeline: forced_choice_images,
+     choices: ['F'],
+     timing_post_trial: 400,
+     response_ends_trial: true
+};
 
 
 // sequence of images for the forced choice portion of the experimet
@@ -166,6 +174,7 @@ timeline.push(start_instructions);
 timeline.push(target_alien_reminder);
 timeline.push(struct_block);
 timeline.push(end_struck_block);
+timeline.push(forced_choice_explained);
 timeline.push(forced_choice_block);
 
 
