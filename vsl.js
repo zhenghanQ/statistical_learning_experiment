@@ -82,7 +82,7 @@ pics['3'] = 'images/trapezoid.png';
 
 
 // creates the familiarization block sequence to be fed into struct_block
-// remember, the structure must be {'stimulus': 'path/to/image.png'}
+// the structure must be {'stimulus': 'path/to/image.png'}
 var img_block_1 = [];
 for (i=0; i<seq1.length; i++) {
     img_block_1.push({'stimulus': pics[seq1[i]]});  
