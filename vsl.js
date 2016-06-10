@@ -102,7 +102,7 @@ var struct_block = {
 // test phase instructions begin
 var end_struck_block = {
   type: 'text',
-  text: '<h3>Great job! We are now going to give you another set of instructions please pay attention!</h3>',
+  text: 'Great job! We are now going to give you another set of instructions please pay attention!',
   cont_key: ['F']
 };
 
@@ -124,9 +124,9 @@ var forced_choice_explained = {
 // more forced choice explanation
 var forced_choiced_exp_cont = {
     type: 'text',
-    text: "<h3><p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
+    text: "<p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
           "that might have lined up together and the last three will belong to another group of aliens " +
-          "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p></h3>",
+          "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p>",
     cont_key: ['F']
 };
 
@@ -144,7 +144,7 @@ var img_block_2 = [];
 for (i=0; i<seq2.length; i++) {
     if (i % 7 === 0 && i !== 0) {
         img_block_2.push({'stimulus': '',
-                          'prompt': '</h3>Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last</h3>',
+                          'prompt': 'Did the first 3 belong to a group or did the last 3 ? Press 1 for the first or 2 for the last',
                           'choices': ['1','2'], 
                           'timing_response': 1600000000,
                           'timing_post_trial': 200,
