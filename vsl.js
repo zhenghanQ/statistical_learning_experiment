@@ -124,7 +124,7 @@ var forced_choice_explained = {
 // more forced choice explanation
 var forced_choiced_exp_cont = {
     type: 'text',
-    text: "<p>We're going to show you aliens one at a time. The first 3 will belong to one gorup of aliens " + 
+    text: "<p>We're going to show you aliens one at a time. The first 3 will belong to one group of aliens " + 
           "that might have lined up together and the last three will belong to another group of aliens " +
           "that might have lined up together. Your job is to decide which of the two gorups lined up together.</p>",
     cont_key: ['F']
