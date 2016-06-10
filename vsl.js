@@ -25,9 +25,9 @@ var target_alien = {
         var num = jsPsych.data.getLastTrialData();
         return 'images/Alien{}.png'.format(num.responses[7]);
     },
-    prompt:  "<h3><p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
+    prompt:  "<p>Hi there, today you are going to see some aliens line up to enter a cool spaceship. " +
              "We need you to help us keep track of a very special alien as the aliens line up to enter their spaceship. " +
-             "The special alien is shown above.</p></h3>",
+             "The special alien is shown above.</p>",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
@@ -58,9 +58,9 @@ var target_alien_reminder = {
         var num = jsPsych.data.getDataByTrialIndex(1);
         return num.stimulus;
     },
-    prompt:  "<h3><p>Remember, this is the special alien to keep track of. The aliens will appear " +
+    prompt:  "<p>Remember, this is the special alien to keep track of. The aliens will appear " +
              "one at a time on the screen as they line up. To keep track of our special alien press " +
-             "the spacebar whenever you see it.</p></h3>",
+             "the spacebar whenever you see it.</p>",
     choices: ['F'],
     response_ends_trial: true,
     timing_post_trial: 400
