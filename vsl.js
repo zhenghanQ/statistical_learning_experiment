@@ -45,7 +45,7 @@ var spaceship_ladder = [
 var start_instructions = {
      type: 'single-stim',
      timeline: spaceship_ladder,
-     choices: ['F'],
+     choices: ['space'],
      timing_post_trial: 400,
      response_ends_trial: true
 };
